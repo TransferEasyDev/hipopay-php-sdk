@@ -61,7 +61,7 @@ $param = [
     'currency'=> 'HKD',                           # 支付单结算币种
     'product_info'=> 'test',                      # 商品信息
     'client_ip'=> '127.0.0.1',                    # 客户端设备IP地址
-    'notify_url'=> '1811291048461334133',         # 异步通知地址
+    'notify_url'=> 'your_url',                    # 异步通知地址
 
 ];
 
