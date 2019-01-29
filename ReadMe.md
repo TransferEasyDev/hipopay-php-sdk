@@ -1,7 +1,7 @@
 
 ![HipoPay](https://s.transfereasy.com/logo/HipoPay_logo_white.png)
 <br>
-![Travis](https://api.travis-ci.org/nukeop/nuclear.svg?branch=master)
+<HR>
 # 全渠道跨境收款
 
 * [官方网站](https://www.hipopay.com/)
