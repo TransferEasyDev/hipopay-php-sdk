@@ -1,7 +1,6 @@
 
 <!--![HipoPay](https://s.transfereasy.com/logo/HipoPay_logo_white.png)-->
-<a href=""><img src="https://s.transfereasy.com/logo/HipoPay_logo_white.png" style="width: 180px;position:relative;top:20px;" alt=""></a>
-<br>
+<img src="https://s.transfereasy.com/logo/HipoPay_logo_white.png" style="width: 180px;"></a>
 
 # 全渠道跨境收款
 
