@@ -2,6 +2,7 @@
 ![HipoPay](https://s.transfereasy.com/logo/HipoPay_logo_white.png)
 <br>
 <HR>
+
 # 全渠道跨境收款
 
 * [官方网站](https://www.hipopay.com/)
