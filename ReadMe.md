@@ -1,7 +1,6 @@
 
 ![HipoPay](https://s.transfereasy.com/logo/HipoPay_logo_white.png)
 
-<HR>
 
 # 全渠道跨境收款
 
