@@ -21,5 +21,6 @@ $param = [
 ];
 
 //isHK 是否使用支付宝香港钱包，取值"TRUE"/"FALSE"，默认值为"FALSE"
-$alipay = new Alipay($isHK = true);
-$alipay->consumerScanMerchant($param);
+//$isCNY 是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"，默认值为"FALSE"
+$alipay = new Alipay($isHK = true, $isCNY = false);
+$alipay->consumerScanDevice($param);
