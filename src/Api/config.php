@@ -9,7 +9,7 @@
 namespace HipoPayApi;
 
 
-define("HP_HOST", "https://testapi.wisecashier.com");
+define("HP_HOST", "https://testapi.hipopay.com");
 define("MERCHANT_NO", "your_merchant_no");
 define("VERSION", "1.0");
 
