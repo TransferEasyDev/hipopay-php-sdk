@@ -19,6 +19,7 @@ include_once '../../Api/config.php';
 
 
 $param = [
+    'merchant_no' => MERCHANT_NO,
     'out_trade_id' => 'your_trande_id',          # 商户交易流水号 Y
     'amount' => '1',                             # 支付单金额，单位为元，精度最多小数点后两位(如果是JPY和KRW，单位为分) Y
     'currency' => 'HKD',                         # 支付单结算币种
