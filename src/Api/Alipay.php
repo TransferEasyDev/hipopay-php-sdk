@@ -35,6 +35,12 @@ class Alipay extends Base {
         $request->post();
     }
 
+    public function consumerScanWeb($params) {
+        $params = $this->__isHK($params);
+        $request = new Request('/alipay/web/payment', $params);
+        $request->post();
+    }
+
     public function consumerScanMerchant($params) {
         $params = $this->__isHK($params);
         $request = new Request('/alipay/qrcode/payment', $params);
