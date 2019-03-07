@@ -37,12 +37,12 @@ class Base {
     }
 
     public function refund($params) {
-        $request = new Request('/refund', $params);
+        $request = new Request('/payment_refund', $params);
         $request->post();
     }
 
     public function getRefund($params) {
-        $request = new Request('/refund', $params);
+        $request = new Request('/payment_refund', $params);
         $request->get();
     }
 

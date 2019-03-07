@@ -51,7 +51,7 @@ class WechatCN extends Base{
     }
 
     public function getRate($params) {
-        $request = new Request('/wechatpay/rate', $params);
+        $request = new Request('/wechatpay/forex_rate', $params);
         $request->get();
     }
 

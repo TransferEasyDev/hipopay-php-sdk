@@ -55,7 +55,7 @@ class Alipay extends Base {
 
     
     public function getRate($params) {
-        $request = new Request('/alipay/rate', $params);
+        $request = new Request('/alipay/forex_rate', $params);
         $request->get();
     }
 }
