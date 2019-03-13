@@ -7,9 +7,9 @@
  */
 
 use HipoPayApi\WechatCN;
+
 include_once '../../Api/WechatCN.php';
 include_once '../../Api/config.php';
-
 
 
 $param = [
@@ -19,9 +19,8 @@ $param = [
     'product_info' => 'test',                      # 商品信息
     'client_ip' => '127.0.0.1',                    # 客户端设备IP地址
     'notify_url' => 'your_notify_url',             # 异步通知地址
-
+//    'is_rmb' => 'TRUE',                       # N	是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"
 ];
 
-//$isCNY 是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"，默认值为"FALSE"
-$wechatCN = new WechatCN($isCNY = false);
+$wechatCN = new WechatCN();
 $wechatCN->consumerScanWeb($param);

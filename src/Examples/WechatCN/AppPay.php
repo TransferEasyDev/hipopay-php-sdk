@@ -23,10 +23,10 @@ $param = [
     'appid' => MERCHANT_APPID,                      # 微信开放平台分配的appid	Y
     'client_ip' => 'test_agent_order_id',           # 客户端设备IP地址 Y
     'notify_url' => 'test_product_id',              # 异步通知地址 N
+//    'is_rmb' => 'TRUE',                       # N	是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"
 ];
 
-//$isCNY 是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"，默认值为"FALSE"
-$wechatCN = new WechatCN($isCNY = false);
+$wechatCN = new WechatCN();
 $wechatCN->appPay($param);
 
 /**

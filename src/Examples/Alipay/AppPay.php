@@ -17,8 +17,8 @@ $param = [
     'product_info' => 'test product',         # 商品信息 Y
     'client_ip' => '0.0.0.0',                 # 客户端设备IP地址 Y
     'notify_url' => 'your_notify_url',        # 异步通知地址  N
+//    'is_rmb' => 'TRUE',                       # N	是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"
 ];
 
-//$isCNY 是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"，默认值为"FALSE"
-$alipay = new Alipay($isCNY = false);
+$alipay = new Alipay();
 $alipay->appPay($param);

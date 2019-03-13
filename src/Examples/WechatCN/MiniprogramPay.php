@@ -28,8 +28,8 @@ $param = [
     'openid' => '',                              # 用户openid
     'client_ip' => 'test_agent_order_id',        # 客户端设备IP地址
     'notify_url' => 'your_notify_url',           # 异步通知地址
+//    'is_rmb' => 'TRUE',                       # N	是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"
 ];
 
-//$isCNY 是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"，默认值为"FALSE"
-$wechatCN = new WechatCN($isCNY = false);
+$wechatCN = new WechatCN();
 $wechatCN->miniProgramPay($param);

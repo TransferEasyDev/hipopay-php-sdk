@@ -17,8 +17,8 @@ $param = [
     'product_info' => 'test product',         # 商品信息 Y
     'client_ip' => '0.0.0.0',                 # 客户端设备IP地址 Y
     'notify_url' => 'your_notify_url',        # 异步通知地址  N
+//    'hk_wallet' => 'FALSE',                   # 是否使用支付宝香港钱包，取值"TRUE"/"FALSE"，默认值为"FALSE"	“FALSE”
 ];
 
-//isHK 是否使用支付宝香港钱包，取值"TRUE"/"FALSE"，默认值为"FALSE"
-$alipay = new Alipay($isHK = true);
+$alipay = new Alipay();
 $alipay->consumerScanMerchant($param);

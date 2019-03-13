@@ -11,21 +11,21 @@ include_once 'config.php';
 
 class Base {
 
-    protected $isHK = false;
-    protected $isCNY = false;
-
-    public function __construct($isHK = false, $isCNY = false) {
-        $this->isHK = $isHK;
-        $this->isCNY = $isCNY;
-    }
-
-    protected function __isCNY($params)
-    {
-        if ($this->isCNY) {
-            $params['is_rmb'] = 'TRUE';
-        }
-        return $params;
-    }
+//    protected $isHK = false;
+//    protected $isCNY = false;
+//
+//    public function __construct($isHK = false, $isCNY = false) {
+//        $this->isHK = $isHK;
+//        $this->isCNY = $isCNY;
+//    }
+//
+//    protected function __isCNY($params)
+//    {
+//        if ($this->isCNY) {
+//            $params['is_rmb'] = 'TRUE';
+//        }
+//        return $params;
+//    }
 
     public function getBill($params) {
         // TODO:
