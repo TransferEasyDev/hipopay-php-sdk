@@ -1,7 +1,6 @@
 <?php
 
 error_reporting(E_ALL & ~E_NOTICE);
-define("PUB_KEY", "your_pubkey_path");
 
 // 获取请求内容
 $data = $_POST; //$data = $_GET 同理，接收的数据均为array
@@ -16,7 +15,7 @@ $headers = [
 $key_file_path = dirname(__FILE__) . "/public.key";
 $public_key = file_get_contents($key_file_path);
 
-$verify = verify($data, $headers['Timestamp'], PUB_KEY, $headers['Signature']);
+$verify = verify($data, $headers['Timestamp'], $public_key, $headers['Signature']);
 var_dump($verify); // int(1)表示验签成功
 
 /**
@@ -24,6 +23,7 @@ var_dump($verify); // int(1)表示验签成功
  * @param $data
  * @param $timestamp
  * @param $public_key
+ * @param $sign
  * @return bool | int
  */
 function verify($data, $timestamp, $public_key, $sign) {
@@ -44,4 +44,3 @@ function verify($data, $timestamp, $public_key, $sign) {
 }
 
 ?>
-

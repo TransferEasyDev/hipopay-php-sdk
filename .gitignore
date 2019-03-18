@@ -69,4 +69,4 @@ fabric.properties
 
 .DS_Store
 .idea
-private.key
+*.key
