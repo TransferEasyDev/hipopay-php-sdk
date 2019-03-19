@@ -22,7 +22,7 @@ class WechatCN extends Base{
 
     public function mpPay($params) {
 //        $params = $this->__isCNY($params);
-        $request = new Request('/wechatpay/mp/payment', $params);
+        $request = new Request('/mp_pay', $params);
         $request->post();
     }
 
