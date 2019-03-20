@@ -55,4 +55,20 @@ class WechatCN extends Base{
         $request->get();
     }
 
+    public function declaration($params) {
+        $request = new Request('/wechatpay/declaration', $params);
+        $request->post();
+    }
+
+    public function redeclaration($params) {
+        $request = new Request('/wechatpay/redeclaration', $params);
+        $request->post();
+    }
+
+    public function getDeclaration($params) {
+        $request = new Request('/wechatpay/declaration', $params);
+        $request->get();
+    }
+
+
 }

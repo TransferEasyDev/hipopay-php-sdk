@@ -58,4 +58,19 @@ class Alipay extends Base {
         $request = new Request('/alipay/forex_rate', $params);
         $request->get();
     }
+
+    public function declaration($params) {
+        $request = new Request('/alipay/declaration', $params);
+        $request->post();
+    }
+
+    public function redeclaration($params) {
+        $request = new Request('/alipay/redeclaration', $params);
+        $request->post();
+    }
+
+    public function getDeclaration($params) {
+        $request = new Request('/alipay/declaration', $params);
+        $request->get();
+    }
 }
