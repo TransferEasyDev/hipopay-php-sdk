@@ -28,7 +28,8 @@ class Base {
 //    }
 
     public function getBill($params) {
-        // TODO:
+        $request = new Request('/download_bill', $params);
+        $request->get();
     }
 
     public function getPayment($params) {

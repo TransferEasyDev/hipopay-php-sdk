@@ -23,6 +23,15 @@ class Request
             "Signature: " . $this->_config['signature'],
             "Timestamp:" . $this->_config['timestamp']
         ];
+
+        if($api_url == '/download_bill') {
+            $this->_config['header'] = [
+                "Version:3.0"  ,
+                "MerchantNo:" . MERCHANT_NO,
+                "Signature:" . $this->_config['signature'],
+                "Timestamp:" . $this->_config['timestamp']
+            ];
+        }
         echo json_encode($this->_config, JSON_PRETTY_PRINT);
     }
 

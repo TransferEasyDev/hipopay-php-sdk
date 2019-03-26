@@ -15,8 +15,11 @@ include_once '../../Api/config.php';
  */
 
 $param = [
+    'merchant_no' => MERCHANT_NO,
+    'start_date' => '20190101',
+    'end_date' => '20190120',
 ];
 
 
 $alipay = new WechatCN();
-$alipay->getBill($param);  // TODO:
+$alipay->getBill($param);
