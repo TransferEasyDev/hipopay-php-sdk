@@ -70,3 +70,6 @@ fabric.properties
 .DS_Store
 .idea
 *.key
+src/Api/Supay.php
+src/Examples/Supay
+
