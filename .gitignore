@@ -72,4 +72,4 @@ fabric.properties
 *.key
 src/Api/Supay.php
 src/Examples/Supay
-
+log
