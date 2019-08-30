@@ -43,4 +43,7 @@ function verify($data, $timestamp, $public_key, $sign) {
     return $verify;
 }
 
+var_dump(http_response_code(200));
+echo('success');
+
 ?>
