@@ -6,9 +6,9 @@
  * Time: 14:43
  */
 
-use HipoPayApi\WechatCN;
+use HipoPayApi\WechatHK;
 
-include_once '../../Api/WechatCN.php';
+include_once '../../Api/WechatHK.php';
 include_once '../../Api/config.php';
 
 //  php -S localhost:8888
@@ -29,8 +29,8 @@ $data = $_GET;
 </body>
 </html>
 <!--页面中的js和css等静态资源使用绝对路径加载-->
-<!--<script src="http://i5wxpz.natappfree.cc/src/Examples/WechatCN/static/js/jquery-1.8.0.min.js" type="text/javascript"></script>-->
-<script src="http://your_domain/src/Examples/WechatCN/static/js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<!--<script src="http://i5wxpz.natappfree.cc/src/Examples/WechatHK/static/js/jquery-1.8.0.min.js" type="text/javascript"></script>-->
+<script src="http://your_domain/src/Examples/WechatHK/static/js/jquery-1.8.0.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(function(){
         var js_api_param = {};
