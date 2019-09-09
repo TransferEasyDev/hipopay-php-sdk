@@ -73,3 +73,6 @@ fabric.properties
 src/Api/Supay.php
 src/Examples/Supay
 log
+vendor
+composer.json
+composer.lock

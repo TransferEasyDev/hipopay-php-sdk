@@ -7,7 +7,7 @@
  */
 
 
-use HipoPayApi\WechatCN;
+use HipoPayApi\WechatHK;
 include_once '../../Api/WechatCN.php';
 include_once '../../Api/config.php';
 
@@ -28,8 +28,8 @@ $param = [
     'openid' => '',                              # 用户openid
     'client_ip' => 'your_client_ip',             # 客户端设备IP地址
     'notify_url' => 'your_notify_url',           # 异步通知地址
-//    'is_rmb' => 'TRUE',                       # N	是否采用人民币(CNY)计价，取值"TRUE"/"FALSE"
+
 ];
 
-$wechatCN = new WechatCN();
-$wechatCN->miniProgramPay($param);
+$wechatHK = new WechatHK();
+$wechatHK->miniProgramPay($param);
