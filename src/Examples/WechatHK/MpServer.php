@@ -59,7 +59,7 @@ $data = $_GET;
 
             $.ajax({
                 async: true,
-                url: 'https://api.wisecashier.com/mp_pay',
+                url: 'https://api.wisecashier.com/wechatpay/hk/online/mp/payment',
                 type: 'POST',
                 data: {
                     'merchant_no': $("#merchant_no").val(),
